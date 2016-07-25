@@ -25,13 +25,48 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr ng-repeat="x in quizquestion">
+                            @*<tr ng-repeat="x in quizquestion">
                                 <td>{{ x.title }}</td>
                                 <td>{{ x.question | uppercase }}</td>
-                            </tr>
+                            </tr>*@
                         </tbody>
                     </table>
 
+                    <hr />
+
+                    <h4>Smart table sample</h4>
+                    @*Smart table*@
+                    <table st-safe-src="rowCollection" st-table="displayCollection" class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Question</th>
+                                <th>View</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="row in displayCollection">
+                                <td>{{row.title}}</td>
+                                <td><div contentEditable="true" ng-model="row.question">{{row.question}}</div></td>
+                                <td>
+                                    <button type="button" ng-click="removeItem(row)" class="btn btn-sm btn-danger" ng-confirm-click="Do u want to perform this ?">
+                                        <i class="glyphicon glyphicon-remove-circle">
+                                        </i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2" class="text-center">
+                                    <div st-pagination="" st-items-by-page="itemsByPage" st-displayed-pages="5"></div>
+                                </td>
+                            </tr>
+                        </tfoot>
+
+                    </table>
+                    
+                    <div> Item per page  is {{itemsByPage}}</div>
 
                     @*<div class="back" ng-class="{flip: answered, correct: correctAnswer, incorrect:!correctAnswer}">
                             <p class="lead">{{answer()}}</p>
