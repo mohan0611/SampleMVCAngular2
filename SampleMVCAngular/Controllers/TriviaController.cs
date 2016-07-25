@@ -35,14 +35,14 @@ namespace SampleMVCAngular.Controllers
             {
                 new TriviaQuestion { question = "question1", title = "title 1" },
                 new TriviaQuestion { question = "question2", title = "title 2" },
-                new TriviaQuestion { question = "question2", title = "title 2" },
-                new TriviaQuestion { question = "question2", title = "title 2" },
-                new TriviaQuestion { question = "question2", title = "title 2" },
-                new TriviaQuestion { question = "question2", title = "title 2" },
-                new TriviaQuestion { question = "question2", title = "title 2" },
-                new TriviaQuestion { question = "question2", title = "title 2" },
-                new TriviaQuestion { question = "question2", title = "title 2" },
-                new TriviaQuestion { question = "question2", title = "title 2" }
+                new TriviaQuestion { question = "question 3", title = "title 3" },
+                new TriviaQuestion { question = "question  4", title = "title 4" },
+                new TriviaQuestion { question = "question 5", title = "title 5" },
+                new TriviaQuestion { question = "question 6", title = "title 6" },
+                new TriviaQuestion { question = "question 7", title = "title 7" },
+                new TriviaQuestion { question = "question 8", title = "title 8" },
+                new TriviaQuestion { question = "question 9", title = "title 9" },
+                new TriviaQuestion { question = "question 10", title = "title 10" }
             };
 
 
